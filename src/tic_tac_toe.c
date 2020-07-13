@@ -75,7 +75,7 @@ diag:
 	}
 
 rev:
-	if ((x + y) == 2) { /* / diagonal */
+	if ((x + y) == (BOARD_SIZE - 1)) { /* / diagonal */
 		for (int i = 0; i < BOARD_SIZE; ++i) {
 			if (board[(BOARD_SIZE - 1)*(i + 1)] != current) {
 				goto ret;
